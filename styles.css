@@ -1,0 +1,181 @@
+:root {
+    --darkTeal: #043436;
+    --salmon: #ffa39e;
+    --mint: #b4fff0;
+    --teal: #7ce5d3;
+    --cyan: #177d78;
+    --grey3: #f2f2f2;
+    --white: #ffffff;
+    --gradientDark: linear-gradient(76.68deg, #11302e 3.45%, rgba(17, 48, 33, 0.8) 168.1%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #111827, var(--darkTeal));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.scene {
+  /*position: relative;
+  width: 360px;
+  height: 360px;*/
+}
+
+/* Login Card */
+.login-card {
+  /*margin: auto;*/
+  width: 500px;
+  height: auto;
+  padding: 24px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-card input {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.login-card button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+/* Orbits */
+.orbit {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 50%;
+  animation: spin linear infinite;
+}
+
+.orbit-1 {
+  width: 300px;
+  height: 300px;
+  animation-duration: 14s;
+}
+
+.orbit-2 {
+  width: 360px;
+  height: 360px;
+  animation-duration: 18s;
+}
+
+.orbit-3 {
+  width: 400px;
+  height: 400px;
+  animation-duration: 22s;
+}
+
+.orbit-4 {
+  width: 440px;
+  height: 440px;
+  animation-duration: 26s;
+}
+
+.orbit-5 {
+  width: 480px;
+  height: 480px;
+  animation-duration: 30s;
+}
+
+.orbit-6 {
+  width: 520px;
+  height: 520px;
+  animation-duration: 36s;
+}
+
+.orbit-7 {
+  width: 560px;
+  height: 560px;
+  animation-duration: 42s;
+}
+/* Dots */
+.dot, .dot-2, .dot-3, .dot-4, .dot-5, .dot-6, .dot-7 {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+    box-shadow: 0 0 10px var(--darkTeal);
+    background: var(--darkTeal);
+}
+
+.dot-2 {
+    background: var(--salmon);
+    box-shadow: 0 0 10px var(--salmon);
+}
+
+.dot-3 {
+    background: var(--mint);
+    box-shadow: 0 0 10px var(--mint);
+}
+
+.dot-4 {
+    background: var(--teal);
+    box-shadow: 0 0 10px var(--teal);
+}
+
+.dot-5 {
+    background: var(--cyan);
+    box-shadow: 0 0 10px var(--cyan);
+}
+
+.dot-6 {
+    background: var(--grey3);
+    box-shadow: 0 0 10px var(--grey3);
+}
+
+.dot-7 {
+    background: var(--white);
+    box-shadow: 0 0 10px var(--white);
+}
+
+/* Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

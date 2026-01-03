@@ -172,6 +172,12 @@ label {
     box-shadow: 0 0 10px var(--white);
 }
 
+#error {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
 /* Animation */
 @keyframes spin {
   from {

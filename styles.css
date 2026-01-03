@@ -24,10 +24,8 @@ body {
   color: white;
 }
 
-.scene {
-  /*position: relative;
-  width: 360px;
-  height: 360px;*/
+label {
+  margin: .5rem 0;
 }
 
 /* Login Card */
@@ -57,21 +55,25 @@ body {
 
 .login-card input {
   margin-bottom: 12px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   border: none;
   outline: none;
 }
 
 .login-card button {
-  margin-top: 10px;
-  padding: 10px;
+  margin: 2rem 0 1rem;
+  padding: 20px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  background: #3b82f6;
+  background: var(--cyan);
   color: white;
   font-weight: bold;
+}
+
+.login-card button:hover {
+    background-color: var(--darkTeal);
 }
 
 /* Orbits */

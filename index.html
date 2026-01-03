@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Animated Login</title>
+  <meta name="description" content="QA Testing Web App">
+
+  <title>QA Test Automation Playground</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -36,10 +38,12 @@
       <span class="dot-6"></span>
     </div>
     <!-- Login Card -->
-    <div class="login-card">
-      <h2>Login</h2>
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
+    <div class="login-card" role="main">
+      <h2>Login Test</h2>
+      <label for="username">Username:</label>
+      <input id="username" type="text" placeholder="Username" />
+      <label for="password">Password</label>
+      <input id="password" placeholder="Password" />
       <button>Sign In</button>
     </div>
   </div>
